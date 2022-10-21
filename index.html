@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Istok+Web:wght@700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat&family=Nunito+Sans:wght@700;900&family=Open+Sans:wdth,wght@97.2,300;100,500&family=Outfit&family=Poppins:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color:hsl(257, 40%, 49%) ;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 110vh;
+}
+header {
+  margin:  1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.message {
+  font-size: 28px;
+  border: none;
+}
+section > .fa-brands {
+  width: 35px;
+  height: 35px;
+}
+section { 
+  width: 130px;
+  height: 30px;
+  display: flex;
+
+ 
+  justify-content:space-evenly;
+  position:absolute;
+    right: 15px;
+    bottom: -40px;
+/* margin: 30px; */
+
+}
+i {
+
+  font-size: 20px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  justify-self: flex-end;
+
+}
+section > i:hover {
+  cursor: pointer;
+  color:hsl(300, 69%, 71%) ;
+  transition: 0.4s all;
+  border-color: hsl(300, 69%, 71%);
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+align-items: center;
+}
+.right {
+width: 29rem;
+height: 18rem;
+display: flex;
+flex-direction: column;
+align-content: space-around;
+justify-content: space-evenly;
+}
+button {
+  width: 160px;
+  height: 45px;
+  font-weight: bold;
+  border-radius: 40px;
+  border: 2px solid white;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0px 2px 8px 1px rgb(69, 69, 69);
+  transition-duration: 0.5s;
+}
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  border: 2px solid hsl(300, 69%, 71%);
+cursor: pointer;
+}
+h1,h2 {
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  font-size: 2.2rem;
+}
+
+  </style>
+</head>
+<body>
+<div>
+  <header>
+    <i class="fa-regular fa-comment-dots message"></i>
+    <h1>Huddle</h1>
+  </header>
+  <main>
+    <div class="left">
+      <img src="./images/illustration-mockups.svg" alt="photo">
+    </div>
+    <div class="right">
+      <h2>Build The Community Your Fans Will Love</h2>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+      <button>Register</button>
+    </div>
+  </main>
+  <section>
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </section>
+</div>
+  
+</body>
+</html>
